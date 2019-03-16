@@ -1,0 +1,94 @@
+<html>
+<head>
+<!--The table for signup -->
+<style>
+	td{font-size:22}
+	#city{width:15em; height:2em}
+	input[type=text]{width:22em; height:2em}
+	input[type=password]{width:16em; height:2em}
+	#button{width:8em; height:2.5em}
+	table{width:600px;height:50px;padding:40px;border:2px solid black;margin:50px;
+	background-color:white}
+	input[type=button]{width:12em; height:3em}
+	#pass1{font-size:14;color:red}
+	#email1{font-size:14;color:red}
+	#name1{font-size:14;color:red}
+	#lname1{font-size:14;color:red}
+</style>
+<!--adding external js1 -->
+<script src="external.js">
+</script>
+<!--adding external js2 -->
+<script src="signInexternal.js">
+</script>
+</head>
+<body background="Sheriff_Desert_Background.jpg">
+<center>
+<h1><u>Sign Up</u></h1>
+<form name="f1"> <!--asking for user details -->
+        <table cellpadding="8">
+	<tr>
+	<td >First Name</td><td><input type="text" name="tf1" ><br>
+
+		<p id="name1"><font color="red" size="2"></font></td></tr>
+		
+	<tr><td>Last Name</td><td><input type="text" name="tf2" ><br>
+
+		<p id="lname1"><font color="red" size="2"></font></td></tr>
+	</tr>
+
+	<tr>
+	<td >Gender</td><td>
+	<input type="radio" name="r" id="r1" value="male">Male<br>
+	<input type="radio" name="r" id="r2" value="female">Female</td>
+	</tr>
+ 	<tr>
+	<td>Select City</td><td><select id="city">
+		<option>Please select the city</option>
+		<option>Indore</option>
+		<option>Bhopal</option>
+		<option>Delhi</option>
+		<option>Goa</option>
+		<option>Chennai</option>
+		<option>Amritsar</option>
+		<option>Other</option></td>
+	</select>
+	<tr>
+	<td>Date of Birth</td><td><input type="date" name="date" id="dt"></td>
+	</tr>
+	<tr>
+		<td>Email Id</td><td><input type="text" name="tf3" ><br>
+	
+		<p id="email1"><font color="red" size="2"></font></td>
+	</tr>
+	<tr>
+		<td>Password</td><td><input type="password" name="pf1" ><br>
+
+		<p id="pass1"><font color="red" size="2"></font></p></td>	
+	</tr>
+	<tr>
+		<td>Contact</td><td><input type="text" name="tf4"></td>
+	</tr>
+	<tr >
+		<td align="center" colspan="2"><input type="submit" value="Sign IN" id="button" onClick="validate1()">
+		<input type="reset" value="RESET" id="button"></td>
+	</tr>
+	<tr>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+	</tr>
+	<tr>
+		<td align="center" colspan="2">Already registered</td>
+	</tr>
+	<tr>
+		<td align="center" colspan="2"><a href="login.html">LogIn</a></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

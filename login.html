@@ -1,0 +1,79 @@
+<html>
+<head>
+<!--used for background and the login dialog -->
+        <style type="text/css">
+	table{width:400px;height:50px;padding:40px;border:2px solid black;margin:50px;
+	background-color:white}
+	td{font-size:22}
+	input[type=button]{width:12em; height:3em}
+        </style>
+
+<script>
+function pas()
+{
+var user=document.f1.tf1.value
+var pass=document.f1.pf1.value
+var u=['prachi','pragya','prashant','guest']
+var p=['prachi1','pragya2','prashant3','guest']
+var c=0
+if((user=="")||(pass==""))
+alert("Please enter the username and password")
+else
+{
+<!--loop for the password verification -->
+for (var i=0;i<u.length;i++)
+{
+
+		if(user==u[i])
+		{
+			if(pass==p[i])
+			{
+			window.open("home.html")
+			}
+			else
+			{
+			alert("The password is invalid. Please try again")
+			}
+		} 
+		else
+		{
+		alert("The username is invalid. Please try again")
+		}
+}
+}
+function signin()
+	{
+		window.open("home.html")
+
+	}
+	
+
+</script>
+</head>
+<body background="Sheriff_Desert_Background.jpg">
+<center><h1><u>Login</u></h1></center>
+<center><!--table for the id password dialog -->
+    <table cellspacing="15">
+        <form name="f1" action='try.php' method='POST'>
+	<tr>
+   	        <td align="center" >EmailId&nbsp;&nbsp;&nbsp;<input type="text" name="userid"></td>
+	</tr>
+	<tr>
+  	        <td align="center" >Password&nbsp;&nbsp;<input type="password" name="password"></td>
+	</tr>
+	<tr>
+	        <td align="center"><input type="submit" value="Login">
+	</tr>
+	<tr>
+	        <td></td>
+	</tr>
+
+	<tr>
+	        <td align="center">Create a new Account<br><a href="signin.html">SignUp</a></td>
+	</tr>
+
+	<center>
+    </table>
+</form>
+</body>
+</html>
