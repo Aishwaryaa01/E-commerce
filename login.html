@@ -11,35 +11,8 @@
 <script>
 function pas()
 {
-var user=document.f1.tf1.value
-var pass=document.f1.pf1.value
-var u=['prachi','pragya','prashant','guest']
-var p=['prachi1','pragya2','prashant3','guest']
-var c=0
 if((user=="")||(pass==""))
 alert("Please enter the username and password")
-else
-{
-<!--loop for the password verification -->
-for (var i=0;i<u.length;i++)
-{
-
-		if(user==u[i])
-		{
-			if(pass==p[i])
-			{
-			window.open("home.html")
-			}
-			else
-			{
-			alert("The password is invalid. Please try again")
-			}
-		} 
-		else
-		{
-		alert("The username is invalid. Please try again")
-		}
-}
 }
 function signin()
 	{
@@ -56,13 +29,13 @@ function signin()
     <table cellspacing="15">
         <form name="f1" action='try.php' method='POST'>
 	<tr>
-   	        <td align="center" >EmailId&nbsp;&nbsp;&nbsp;<input type="text" name="userid"></td>
+   	        <td align="center" >Email Id&nbsp;&nbsp;&nbsp;<input type="text" name="userid"></td>
 	</tr>
 	<tr>
   	        <td align="center" >Password&nbsp;&nbsp;<input type="password" name="password"></td>
 	</tr>
 	<tr>
-	        <td align="center"><input type="submit" value="Login">
+	        <td align="center"><input type="submit" value="Login" onclick="pass()">
 	</tr>
 	<tr>
 	        <td></td>
