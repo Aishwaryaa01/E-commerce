@@ -1,0 +1,39 @@
+<html>
+<head>
+<title> Log in </title>
+<script src=""></script>
+<style type="text/CSS">
+h1.cust{width:1290px; padding:10px; border:black double 5px; margin:15px;}
+#email[font-size:120%;}
+#para1{color: #f95c27}
+
+a: link{color: #f95c27; text-decoration:none;}
+a: visited{color: #f95c27; text-decoration:none;}
+a: hover{color: #000000; text-decoration:none;}
+a: active{color: #f95c27; text-decoration:none;}
+</style>
+</head>
+<body>
+<form action="/customerlogin" method="POST" name="f1">
+
+<h1 class="cust"> <center> CUSTOMER LOGIN </center></h1><br>
+<h2 id="regis"> Registered Customers </h2><hr color=#f95c27>
+<p> If you already have an account, sign in with your email address.</p>
+<p id="email"> Email*<br></p>
+<input type="email" name="txt1" size="40" height="40" style="width:355px; padding:8px;" required>
+
+<p id="password"> Password*<br></p>
+<input type="password" name="txt2" size="40" height="40" style="width:355px; padding:8px;" required>
+<p id="para1"><a href="#"> Forgot your password?</a>&nbsp; &nbsp; <input type="button" value="Submit" onclick="log()"
+style="width: 130px; height: 45px; line-height: 20px; padding-bottom: 2px; vertical-align: middle; color: white; background-color: #f95c27;">
+
+<h2 id="regis"> New Customer </h2><hr color=#f95c27>
+<p> Create an account to avail various benefits! Learn languages anytime anywhere! </p>
+<a href="Log_In.html">
+<input type="button" value="Create an account" 
+style="width: 130px; height: 45px; line-height: 20px; padding-bottom: 2px; vertical-align: middle; color: white; background-color: #f95c27;">
+</a>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+<html>
+<head>
+<title> Newsletter </title>
+<script type="text/javascript">
+b=new Array()
+i=0
+function addRec()
+  {
+     b[i]=new Array(2) 
+	 b[i][0]=document.f1.no1.value
+	 b[i][1]=document.f1.no2.value
+	 i++
+	 document.f1.no1.value=""
+	 document.f1.no2.value=""
+   }
+
+function disp()
+{
+   document.write("<table border=1><tr><td>Name</td><td>E-mail Address</td>")
+   for (i=0;i<b.length;i++)
+      {
+	     document.write("<tr>")
+	   	 
+          for(j=0;j<2;j++)
+             {
+                document.write("<td>"+b[i][j]+"</td>")
+             }
+            document.write("<tr>")
+      }
+ document.write("</table>")	  
+}   
+function empty()
+{
+   name=document.f1.no1.value
+   email=document.f1.no2.value
+   if((name=="") && (email==""))
+        alert("Both the fields are mandatory")
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<input type="text" name="no1" placeholder="Enter Name" onblur="empty()">
+<input type="email" name="no2" placeholder="Enter E-mail" onblur="empty()">
+<input type="button" value="Subscribe" onclick="addRec()">
+<input type="button" value="Display Subscriptions" onclick="disp()">
+</form>
+</body>
+</html>
